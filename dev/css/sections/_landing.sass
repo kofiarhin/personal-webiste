@@ -1,0 +1,105 @@
+#landing
+	min-height: 100vh
+	margin-bottom: 2rem
+	padding: 2rem 0rem
+	background: linear-gradient(to top right, $lightOrange, $orange)
+
+	.navigation
+		margin-bottom:  8rem
+	.content-wrapper
+		width: 840px
+		max-width: 100%
+		margin-left: 2rem
+	.content-wrapper
+		.intro
+			display: inline-block
+			padding: 0.8em 2em
+			background: white
+			color: black
+			margin-bottom: 1.5rem
+			font-size: 2rem
+			cursor: pointer
+		.about
+			font-size: 4rem
+			color: white
+			margin-bottom: 0.3rem
+		.slug
+			font-size: 1.6rem
+			color: white
+			margin-bottom: 2rem
+		.icon-wrapper
+			margin-bottom: 3rem
+			width: 100%
+			max-width: 100%
+			a
+				display: inline-block
+				margin-bottom: 1rem
+		.icon-wrapper a i
+			font-size: 2em
+			margin-right: 1em
+			display: inline-block
+			background: white
+			width: 50px 
+			height: 50px
+			line-height: 50px
+			text-align: center
+			border-radius: 50%
+
+		.cta-wrapper a
+			display: inline-block
+			background: white
+			padding: 1rem 2rem
+			font-size: 1.5rem
+			margin-bottom: 0.5em
+			cursor: pointer
+			text-decoration: none
+
+
+
+//media query
+
+@media(max-width: 840px)
+	#landing
+		min-height: 70vh
+		padding-bottom: 5rem	
+	#landing .container
+		.content-wrapper
+			margin-left: 0rem
+		.intro
+			font-size: 1.5rem
+		.about
+			font-size: 3rem
+		.slug
+			font-size: 1.5rem
+		.icon-wrapper
+			margin-bottom: 1.8rem
+
+
+@media(max-width: 540px)
+
+	#landing .navigation
+		margin-bottom: 4rem
+
+
+@media(max-width: 400px)
+
+	#landing .content-wrapper
+		.intro
+			font-size: 1.2rem
+			margin-bottom: 0.5rem
+			padding: 1rem 4rem
+		.about
+			font-size: 1.6rem
+		.slug
+			font-size: 0.8rem
+		.icon-wrapper
+			margin-bottom: 0.8rem
+		.icon-wrapper a i
+			font-size: 1.2rem
+			width: 30px
+			height: 30px
+			line-height: 30px
+		.cta-wrapper 
+			a
+				font-size: 1rem
+				padding: 1rem

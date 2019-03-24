@@ -1,0 +1,100 @@
+//open sans
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700')
+
+//variables
+$white: #ffff
+$black: #000
+$blue: #07B3E3
+$dark-blue: #396EDD
+$lightBlue: #408ab4
+$red: #cc4165
+$violet: #837dff
+$lightViolet: #837dff
+$gold: #ffa900
+$purple: #a561ff
+$orange: #E47122
+$lightOrange: #EFA860
+
+
+
+//general styling
+
+body
+	overflow-x: hidden
+*
+	box-sizing: border-box
+
+a
+	text-decoration: none
+	color: black
+ul
+	list-style: none
+	margin: 0
+	padding: 0
+
+
+
+html, body
+	font-family: 'Open Sans', sans-serif
+h1, h2, h3, h4, h5, p, hr
+	margin: 0
+	padding: 0
+
+
+
+//general styling
+a, a:active
+	text-decoration: none
+
+
+button
+	outline: none
+	border: none
+//bootstrap reset
+.container
+	max-width: 70%
+	text-align: left !important
+
+	
+//gendral styling
+.title
+	font:
+		size: 3rem
+		weight: 200
+	margin-bottom: 1.2rem
+	span
+		color: $blue
+	&.center
+		text-align: center
+
+
+.bar
+	width: 80px
+	height: 5px
+	background: $orange
+	margin-bottom: 3rem
+	display: inline-block
+
+.mini-bar
+	width: 50px
+	height: 3px
+	background: $orange
+	display: inline-block
+
+
+.button-wrapper
+	text-align: center
+@media(max-width: 640px)
+	.container
+		max-width: 80%
+
+@media(max-width: 450px)
+	.container
+		max-width: 90%
+	.title
+		font-size: 1.8rem
+		margin-bottom: 0.8rem
+	.bar
+		width: 50px
+	.mini-bar
+		width: 30px

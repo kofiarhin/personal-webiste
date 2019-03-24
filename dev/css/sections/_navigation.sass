@@ -1,0 +1,56 @@
+.navigation .container
+	display: flex
+	align-items: center
+	justify-content: space-between
+	.logo
+		z-index: 2000
+	.logo a
+		color: white
+		font-size: 1.5rem
+		text-transform: uppercase
+		span
+			color: $black
+	nav a 
+		font-size: 1.3rem
+		color: white
+		margin-left: 2rem
+		cursor: pointer
+	.menu
+		color: white
+		font-size: 2.5rem
+		display: none
+		cursor: pointer
+		z-index: 2000
+
+.mini-nav
+	position: absolute
+	width: 100%
+	min-height: 65vh
+	background: linear-gradient($orange, $lightOrange)
+	box-shadow: 5px 5px 10px rgba($black, 0.2)
+	padding-top: 4rem
+	display: none
+	transform: translateX(100%)
+	transition: all ease-in-out 300ms
+	&.active
+		transform: translateX(0%)
+	a
+		display: block
+		text-align: center
+		padding: 2rem 0rem
+		font-size: 1.5rem
+		color: $white
+		border-bottom: 1px solid rgba($orange, 0.2)
+
+@media(max-width: 740px)
+	.mini-nav
+			display: block
+	.navigation .container
+		nav
+			display: none
+		.menu
+			display: block
+
+
+
+			

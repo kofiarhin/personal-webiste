@@ -1,0 +1,49 @@
+#projects
+	margin-bottom: 2rem
+	.thumb-unit
+		position: relative
+		margin-bottom: 2rem
+		cursor: pointer
+		transition: all ease-in-out 300ms
+		overflow: hidden
+		&:hover
+			box-shadow: 4px 4px 10px rgba(black, 0.2)
+			z-index: 2000
+		&:hover .overlay
+			transform: translateY(0%)
+	img
+		display: block
+		width: 100%
+		margin-bottom: 1rem
+
+	.info
+		font:
+			size: 1.5rem
+			weight: 400
+
+	.thumb-unit .overlay
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: $orange
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		transform: translateY(110%)
+		transition: all ease-in-out 300ms
+		.demo
+			margin-bottom: 0.5rem
+		.code,
+		.demo
+			font-size: 1rem
+			display: inline-block
+			border: 1px solid $white
+			padding: 1rem 2rem
+			transition: all ease-in-out 300ms
+			&:hover
+				background: $orange
+				color: white
+				border: 1px solid white
