@@ -920,6 +920,10 @@ button {
   border: none;
 }
 
+#contact form input.error, #contact form textarea.error {
+  border: 2px solid red;
+}
+
 #contact form label {
   color: #E47122;
   font-size: 1.2rem;

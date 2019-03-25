@@ -1,15 +1,18 @@
 <section id="contact">
-	
+
 
 	<div class="container">
-		
+
 		<h1 class="title">Say Hi!</h1>
 		<hr class="bar">
+
+
+		<p class="lead feedback"></p>
 
 		<div class="row justify-content-center">
 
 			<div class="col-md-8">
-				
+
 				<form action="" method="post" class="form">
 					<div class="form-group">
 						<label for="name">Your Name</label>
