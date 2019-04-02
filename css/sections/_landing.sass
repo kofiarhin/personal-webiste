@@ -19,18 +19,43 @@
 			margin-bottom: 1.5rem
 			font-size: 2rem
 			cursor: pointer
+			transform: translateX(300px)
+			opacity: 0
+			transition: all ease-in-out 300ms
+			&.active
+				opacity: 1
+				transform: translateX(0px)
+
 		.about
 			font-size: 4rem
 			color: white
 			margin-bottom: 0.3rem
+			transform: translateX(-200px)
+			opacity: 0
+			transition: all ease-in-out 300ms
+			&.active
+				opacity: 1
+				transform: translateX(0px)
 		.slug
 			font-size: 1.6rem
 			color: white
 			margin-bottom: 2rem
+			transform: translateY(200px)
+			transition: all ease-in-out 500ms
+			opacity: 0
+			&.active
+				opacity: 1
+				transform: translateY(0px)
 		.icon-wrapper
 			margin-bottom: 3rem
 			width: 100%
 			max-width: 100%
+			opacity: 0
+			transition: all ease-in-out 800ms
+			transform: translateX(-100px)
+			&.active
+				opacity: 1
+				transform: translateX(0px)
 			a
 				display: inline-block
 				margin-bottom: 1rem
@@ -53,6 +78,13 @@
 			margin-bottom: 0.5em
 			cursor: pointer
 			text-decoration: none
+			transform: translateY(-100px)
+			opacity: 0
+			transition: all ease-in-out 600ms
+			&.active
+				transform: translateY(0px)
+				opacity: 1
+			
 
 
 

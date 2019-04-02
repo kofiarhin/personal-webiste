@@ -459,24 +459,56 @@ button {
   margin-bottom: 1.5rem;
   font-size: 2rem;
   cursor: pointer;
+  transform: translateX(300px);
+  opacity: 0;
+  transition: all ease-in-out 300ms;
+}
+
+#landing .content-wrapper .intro.active {
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 #landing .content-wrapper .about {
   font-size: 4rem;
   color: white;
   margin-bottom: 0.3rem;
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: all ease-in-out 300ms;
+}
+
+#landing .content-wrapper .about.active {
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 #landing .content-wrapper .slug {
   font-size: 1.6rem;
   color: white;
   margin-bottom: 2rem;
+  transform: translateY(200px);
+  transition: all ease-in-out 500ms;
+  opacity: 0;
+}
+
+#landing .content-wrapper .slug.active {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 #landing .content-wrapper .icon-wrapper {
   margin-bottom: 3rem;
   width: 100%;
   max-width: 100%;
+  opacity: 0;
+  transition: all ease-in-out 800ms;
+  transform: translateX(-100px);
+}
+
+#landing .content-wrapper .icon-wrapper.active {
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 #landing .content-wrapper .icon-wrapper a {
@@ -504,6 +536,14 @@ button {
   margin-bottom: 0.5em;
   cursor: pointer;
   text-decoration: none;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all ease-in-out 600ms;
+}
+
+#landing .content-wrapper .cta-wrapper a.active {
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 @media (max-width: 840px) {
@@ -559,6 +599,15 @@ button {
     font-size: 1rem;
     padding: 1rem;
   }
+}
+
+.navigation {
+  transition: all ease-in-out 700ms;
+  opacity: 0;
+}
+
+.navigation.active {
+  opacity: 1;
 }
 
 .navigation .container {
