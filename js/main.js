@@ -155,8 +155,24 @@ const UiController = (function () {
 //page Controller
 const Controller = (function (AppController, UiController) {
 
+	//loading animation
 
-	//landing animation
+	window.onload = function() {
+
+
+		setTimeout(load, 1000);
+
+		function load() {
+
+			const loader = document.querySelector(".loader");
+
+
+			loader.classList.add("active");
+
+		}
+
+
+	}
 
 	UiController.landingAnimation();
 

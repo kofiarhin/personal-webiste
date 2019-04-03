@@ -428,6 +428,31 @@ button {
   }
 }
 
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #E47122;
+  z-index: 4000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.loader.active {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .loader {
+    font-size: 1.2rem;
+  }
+}
+
 @media (max-width: 500px) {
   header.main-header .icons .fa {
     font-size: 1.5em;
