@@ -462,7 +462,8 @@ button {
 #landing {
   min-height: 100vh;
   margin-bottom: 2rem;
-  padding: 2rem 0rem;
+  padding: 2rem 0rem 8rem;
+  background: orange;
   background: linear-gradient(to top right, #EFA860, #E47122);
 }
 
@@ -478,11 +479,12 @@ button {
 
 #landing .content-wrapper .intro {
   display: inline-block;
-  padding: 0.8em 2em;
+  padding: 0.6em 6rem;
   background: white;
   color: black;
   margin-bottom: 1.5rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 400;
   cursor: pointer;
   transform: translateX(300px);
   opacity: 0;
@@ -495,9 +497,9 @@ button {
 }
 
 #landing .content-wrapper .about {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: white;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
   transform: translateX(-200px);
   opacity: 0;
   transition: all ease-in-out 300ms;
@@ -509,12 +511,13 @@ button {
 }
 
 #landing .content-wrapper .slug {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   transform: translateY(200px);
   transition: all ease-in-out 500ms;
   opacity: 0;
+  line-height: 1.5;
 }
 
 #landing .content-wrapper .slug.active {
