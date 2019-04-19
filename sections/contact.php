@@ -7,7 +7,9 @@
 		<hr class="bar">
 
 
-		<p class="lead feedback"></p>
+				<p class="lead feedback"></p>
+
+
 
 		<div class="row justify-content-center">
 
