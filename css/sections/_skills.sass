@@ -8,12 +8,21 @@
 		.thumb-unit
 			width: 16.66%
 			padding-top: 16.66%
+			background: white
 			background: 
 				size: 80%
 				position: center
 				repeat: no-repeat
 
 			cursor: pointer
+			box-shadow: 5px 5px 10px rgba($black, 0.2)
+			transition: all ease-in-out 300ms
+			z-index: 1000		
+			&:hover
+				z-index: 2000
+				transform: scale(1.1)
+				box-shadow: 8px 8px 15px rgba($black, 0.4)
+			
 			&:nth-child(1)
 				background:
 					image: url('../img/skills/html5_sm.png')

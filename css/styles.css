@@ -391,8 +391,8 @@ button {
 
 .preloader img {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 24px;
+  height: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -829,10 +829,24 @@ body.loaded .preloader {
     #skills .thumb-wrapper .thumb-unit {
       width: 16.66%;
       padding-top: 16.66%;
+      background: white;
       background-size: 80%;
       background-position: center;
       background-repeat: no-repeat;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      -webkit-transition: all ease-in-out 300ms;
+      -o-transition: all ease-in-out 300ms;
+      transition: all ease-in-out 300ms;
+      z-index: 1000; }
+      #skills .thumb-wrapper .thumb-unit:hover {
+        z-index: 2000;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
+        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4); }
       #skills .thumb-wrapper .thumb-unit:nth-child(1) {
         background-image: url("../img/skills/html5_sm.png"); }
       #skills .thumb-wrapper .thumb-unit:nth-child(2) {
