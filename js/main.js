@@ -109,7 +109,7 @@ const Controller = (function(AppController, UiController) {
     setTimeout(load, 1000);
 
     function load() {
-      const loader = document.querySelector(".loader");
+      const loader = document.querySelector("#wrapper");
 
       loader.classList.add("active");
     }
