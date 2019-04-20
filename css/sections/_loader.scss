@@ -1,0 +1,136 @@
+.loader.active {
+  display: none;
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 99999;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+}
+
+.preloader img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+body.loaded {
+  overflow: visible;
+}
+
+body.loaded .preloader {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.pre-wrap {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: preloader_together 2s infinite linear;
+  -moz-animation: preloader_together 2s infinite linear;
+  animation: preloader_together 2s infinite linear;
+}
+
+.preloader .wBall {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.preloader .wBall:nth-child(1) {
+  top: 0;
+  left: 0;
+  background: #83f52c;
+}
+
+.preloader .wBall:nth-child(2) {
+  top: 100%;
+  left: 100%;
+  background: #f60;
+  -webkit-transform: translate(-100%, -100%);
+  -ms-transform: translate(-100%, -100%);
+  -o-transform: translate(-100%, -100%);
+  transform: translate(-100%, -100%);
+}
+
+.preloader .wBall:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  background: #f09;
+}
+
+.preloader .wBall:nth-child(4) {
+  bottom: 100%;
+  left: 100%;
+  background: #6e0dd0;
+  -webkit-transform: translate(-100%, 100%);
+  -ms-transform: translate(-100%, 100%);
+  -o-transform: translate(-100%, 100%);
+  transform: translate(-100%, 100%);
+}
+
+@-webkit-keyframes preloader_together {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: rotate(180deg) scale(0.4);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes preloader_together {
+  0% {
+    -moz-transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    -moz-transform: rotate(180deg) scale(0.4);
+    opacity: 0;
+  }
+  100% {
+    -moz-transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes preloader_together {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg) scale(0.4);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
