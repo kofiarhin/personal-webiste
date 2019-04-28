@@ -1,0 +1,2 @@
+1. Write a reset function to reset the landing animation
+2. Edit project thumbnail

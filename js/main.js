@@ -106,7 +106,7 @@ const UiController = (function() {
 const Controller = (function(AppController, UiController) {
   //loading animation
   window.onload = function() {
-    setTimeout(load, 1000);
+    setTimeout(load, 500);
 
     function load() {
       const loader = document.querySelector(".loader");
