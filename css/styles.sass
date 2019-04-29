@@ -10,3 +10,9 @@
 @import "sections/projects"
 @import "sections/footer"
 @import "sections/contact"
+
+.site-wrapper
+    transform: translateY(200px)
+    transition: all ease-in-out 400ms
+    &.active
+        transform: translateY(0px)

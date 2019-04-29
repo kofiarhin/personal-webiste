@@ -970,3 +970,15 @@ html {
   #contact form button {
     font-size: 1rem;
     padding: 0.8rem; } }
+
+.site-wrapper {
+  -webkit-transform: translateY(200px);
+  -ms-transform: translateY(200px);
+  transform: translateY(200px);
+  -webkit-transition: all ease-in-out 400ms;
+  -o-transition: all ease-in-out 400ms;
+  transition: all ease-in-out 400ms; }
+  .site-wrapper.active {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px); }

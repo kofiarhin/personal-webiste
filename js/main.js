@@ -41,7 +41,7 @@ const UiController = (function() {
 
   function addActive() {
     const elements = document.querySelectorAll(
-      ".intro, .about, .slug, .icon-wrapper, .projects, .navigation"
+      ".intro, .about, .slug, .icon-wrapper, .projects, .navigation, .site-wrapper"
     );
 
     elements.forEach(function(current) {
