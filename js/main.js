@@ -97,16 +97,16 @@ const UiController = (function() {
     landingAnimation: function() {
       //wait for 3secs and add active class to all landing elements
 
-      setTimeout(addActive, 2500);
+      setTimeout(addActive, 9000);
     }
   };
 })();
 
 //Main Controller
 const Controller = (function(AppController, UiController) {
-  //loading animation
+  //remove loader wrapper
   window.onload = function() {
-    setTimeout(load, 500);
+    setTimeout(load, 8000);
 
     function load() {
       const loader = document.querySelector("#wrapper");
