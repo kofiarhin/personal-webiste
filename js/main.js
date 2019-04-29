@@ -95,9 +95,9 @@ const UiController = (function() {
     },
 
     landingAnimation: function() {
-      //wait for 1min and add active class to all landing elements
+      //wait for 3secs and add active class to all landing elements
 
-      setTimeout(addActive, 2000);
+      setTimeout(addActive, 2500);
     }
   };
 })();
