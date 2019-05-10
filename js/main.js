@@ -1,24 +1,3 @@
-//borrowed jquery code  will update to javascript later
-//smooth scroll using jquery
-function smoothScroll(duration) {
-  $('a[href^="#"]').on("click", function(event) {
-    var target = $($(this).attr("href"));
-
-    if (target.length) {
-      event.preventDefault();
-
-      $("html, body").animate(
-        {
-          scrollTop: target.offset().top
-        },
-        duration
-      );
-    }
-  });
-}
-
-smoothScroll(300);
-
 //controll the app models from here
 const AppController = (function() {
   return {
@@ -97,7 +76,7 @@ const UiController = (function() {
     landingAnimation: function() {
       //wait for 3secs and add active class to all landing elements
 
-      setTimeout(addActive, 9000);
+      setTimeout(addActive, 200);
     }
   };
 })();
@@ -106,7 +85,7 @@ const UiController = (function() {
 const Controller = (function(AppController, UiController) {
   //remove loader wrapper
   window.onload = function() {
-    setTimeout(load, 8000);
+    setTimeout(load, 100);
 
     function load() {
       const loader = document.querySelector("#wrapper");

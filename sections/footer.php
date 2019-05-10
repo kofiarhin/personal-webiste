@@ -11,6 +11,8 @@
 			
 </footer>
 
+<!-- scroll animation -->
+<script src='js/scroll.js'></script>
 <!--====  custom js=======-->
 <script src='js/main.js'></script>
 </body>
